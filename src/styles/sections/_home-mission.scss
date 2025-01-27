@@ -1,4 +1,4 @@
-.home-mission{
+/* .home-mission{
     @media only screen and (max-width: 639px) {
         font-weight: 200;
         
@@ -178,4 +178,124 @@
         }
     }
     
+} */
+
+
+.home-mission {
+    margin-bottom: 5rem;
+    font-size: large;
+    font-weight: 200;
+
+    .mission-container {
+
+        @media(min-width: $lg) {
+            position: relative;
+        }
+
+        //image
+        img {
+            width: 100%;
+        }
+        @media (min-width: 1441px){
+            max-width: 1530px;
+            margin: auto; 
+            display: flex;
+            justify-content: center; 
+            position: relative; 
+        
+            img {
+                width: 1440px; 
+                display: block;
+            }
+        }
+
+        //Text contents
+        .mission-contentsbox {
+        
+            @media(min-width: $lg) {
+                position: absolute;
+                top: 3rem;
+                left: 1rem;
+            }
+
+            @media(min-width: $xl) {
+                top: 7rem;
+                left: 2rem;
+            }
+
+            @media(min-width: $xl) {
+                top: 9rem;
+                left: 5rem;
+            }
+
+            @media(min-width: $xxl) {
+                top: 10rem;
+                left: 10rem;
+            }
+
+            .mission-box {
+                background-color: $primary;
+                color: #fff;
+                padding: 4rem 2.5rem;
+
+                @media(min-width: $lg) {
+                    width: 80%;
+                }
+
+                @media(min-width: $xl) {
+                    width: 60%;
+                }
+
+                //Contents box title
+                .title {
+                    padding-bottom: 0.875rem;
+                }
+
+                .mission-textbox {
+                    border-left: solid #fff 1px;
+                    position: relative;
+
+                    .textbox-line{
+                        position: absolute;
+                        top:2.6rem;
+                        width: 2px;
+                        height:2.2rem;
+                        background-color: #fff;
+
+                    }
+
+                    .textbox-title {
+                        font-weight: 400;
+                        padding-top: 2.6rem;
+                        padding-bottom: 1.875rem;
+                        padding-left: 1.3rem;
+
+                        @media (min-width: $lg) {
+                            font-size: 1.25rem;
+                        }
+                    }
+
+                    .textbox-text {
+                        padding-left: 1.3rem;
+                        margin-bottom: 1rem;
+
+
+                        @media (min-width: $lg) {
+                            font-size: 1.25rem;
+                        }
+                    }
+                }
+
+                .mission-button {
+                    padding-left: 1.3rem;
+                    padding-top: 1.875rem;
+
+                    @media (min-width: $lg) {
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }
+    }
+
 }
