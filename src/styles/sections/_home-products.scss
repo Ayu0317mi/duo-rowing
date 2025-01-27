@@ -1,154 +1,98 @@
-.home-products{
+//_home-products.scss
+.home-products {
     font-weight: 200;
-    margin-bottom: 5rem;
+    margin: 0 auto;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh;
+  
+    .product-container {
 
-    .product-container{
-
-        @media(min-width: $sm){
-        display:flex;
-        max-width: screen;
-        padding: 0 1rem;
-        }
-
-        @media (min-width: 1441px){
-            max-width: 1441px;
-            margin: auto; 
-            display: flex;
-            justify-content: center; 
-            position: relative; 
-        }
-    
-
-    .product-textcontainer{
-        width:screen;
-        height: auto;
-        padding: 1rem;
-
-        @media(min-width: $sm){
-            width: 50%;
-            margin-left: 0;
-            padding: 0;
-        }
-
-
-        .title{
-            font-size: 1rem;
-        }
-
-        .product-textbox{
-            width:screen;
-            height: auto;
-            border-left:solid black 1px;
-            margin-top: 0.4rem;
-            position: relative;
-
-            @media(min-width: $sm){
-                max-width: 90%;
-                height:auto;
-            }
-
-            .textbox-line{
-                position: absolute;
-                top: 1.25rem;
-                width: 2px;
-                height: 3.1rem;
-                background-color: black;
-
-                @media(min-width: $sm){
-                    top: 1.25rem;
-                    height:3rem;
-                }
-
-                @media(min-width: $md){
-                    top: 1.56rem;
-                    width: 2px;
-                    height: 2.3rem;
-                }
-
-                @media(min-width: $lg){
-                    top: 1.8rem;
-                    width: 3px;
-                    height: 2.8rem;
-                }
-
-                @media(min-width: $xl){
-                    top: 2.5rem;
-                    height: 3.65rem;
-                }
-                
-            }
-    
-            .textbox-title{
-                font-weight:400;
-                padding-top: 1.25rem;
-                margin-left: 0.3rem;
-
-                @media(min-width: $sm){
-                    font-size: 1rem;
-                }
-
-                @media(min-width: $md){
-                    padding-top: 1.56rem;
-                    margin-left: 0.625rem;
-                }
-
-                @media(min-width: $lg){
-                    padding-top: 1.8rem;
-                    margin-left: 0.7rem;
-                }
-
-                @media(min-width: $xl){
-                    padding-top: 2.5rem;
-                }
-            }
-    
-            .textbox-text{
-                padding-top: 1.25rem;
-                margin-left: 0.3rem;
-
-                @media(min-width: $sm){
-                    font-size: 1rem;
-                }
-            
-                @media(min-width: $md){
-                    padding-top: 1.56rem;
-                    margin-left: 0.625rem;
-                }
-
-                @media(min-width: $lg){
-                    padding-top: 1.8rem;
-                    margin-left: 0.7rem;
-                }
-
-            }
-        }
+    @media (min-width: $sm) {
+        display: flex;
+        gap: 1.25rem;
+        justify-content: space-between;
+        align-items: center;
     }
+      
+      @media (min-width: $xl) {
+        padding: 0 10rem;
+      }
+      @media (min-width: $xxl) {
+        padding: 0 15rem;
+      }
 
-    .product-button{
-        margin-top: 0.9rem;
-        margin-left: 0.3rem;
+      @media screen and (min-width: 1880px) {
+        padding: 0 25rem;
+      }
 
-        @media(min-width: $sm){
-            font-size: 1rem;
+      @media (min-width: 1441px) {
+        max-width: 1440px; /* Limit max width */
+      }
+  
+      .product-textcontainer,
+      .image-wrapper {
+        flex: 1;
+      }
+  
+      .product-textcontainer {
+        padding: 1.25rem;
+  
+        .title {
+          padding-bottom: 0.875rem;
         }
-        @media(min-width: $lg){
-            margin-top: 1.8rem;
-            margin-left: 0.7rem;
+  
+        .product-textbox {
+          border-left: solid black 1px;
+          position: relative;
+  
+          .textbox-title {
+            font-weight: 400;
+            padding-top: 2.6rem;
+            padding-bottom: 1.875rem;
+            padding-left: 1.3rem;
+            font-size: 1.25rem;
+          }
+  
+          .textbox-text {
+            padding-left: 1.3rem;
+            font-size: 1.25rem;
+          }
         }
+  
+        .textbox-line {
+          position: absolute;
+          top: 2.6rem;
+          width: 2px;
+          height: 3.1rem;
+          background-color: black;
+        }
+  
+        .product-button {
+          padding-left: 1.3rem;
+          padding-top: 1.875rem;
+          font-size: 1.25rem;
+        }
+      }
+  
+      .image-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (min-width: $sm) {
+            justify-content: right;
+        }
+  
+        @media screen and (max-width: $lg) {
+          padding: 1.25rem;
+        }
+  
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
     }
-
-    .image-wrapper{
-        width: 100%;
-
-        @media(min-width: $sm){
-            width: 50%;
-        }
-
-        img{
-            width:100%;
-            margin: 0; 
-        }
-    }
-}
-
-}
+  }  

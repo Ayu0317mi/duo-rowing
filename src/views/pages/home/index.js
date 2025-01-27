@@ -16,12 +16,11 @@ export default function Home() {
         ${Header().outerHTML}
         ${Nav().outerHTML}
         ${hero().outerHTML}
-        ${createDivider('left-aligned').outerHTML}
-
     `;
 
     return `
         ${heroSection.outerHTML}
+        ${createDivider('left-aligned').outerHTML}
         ${HomeProducts().outerHTML}
         ${Mission().outerHTML}
         ${Testimonial().outerHTML}
