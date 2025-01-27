@@ -1,3 +1,4 @@
+//pages/home/index.js
 import Header from '../../components/global/header';
 import Nav from '../../components/global/nav';
 import hero from './hero';
