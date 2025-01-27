@@ -52,12 +52,17 @@
             padding-top: 2.6rem;
             padding-bottom: 1.875rem;
             padding-left: 1.3rem;
-            font-size: 1.25rem;
+            @media (min-width: $lg) {
+              font-size: 1.25rem;
+            }
           }
   
           .textbox-text {
             padding-left: 1.3rem;
-            font-size: 1.25rem;
+            font-size: 1rem;
+            @media (min-width: $lg) {
+              font-size: 1.25rem;
+            }
           }
         }
   
@@ -72,7 +77,9 @@
         .product-button {
           padding-left: 1.3rem;
           padding-top: 1.875rem;
-          font-size: 1.25rem;
+          @media (min-width: $lg) {
+            font-size: 1.25rem;
+          }
         }
       }
   
